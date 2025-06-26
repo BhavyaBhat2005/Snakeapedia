@@ -1,0 +1,240 @@
+/* Image Styling */
+.safety-img {
+    width: 120px; /* Increased size */
+    height: 120px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .safety-img img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Responsive image size for smaller screens */
+  @media (max-width: 768px) {
+    .safety-img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .safety-img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+
+  
+.info-box{
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid white;
+    margin-top: 3rem;
+  }
+  .title-section {
+    width: 100%; /* Full width */
+  height: 50%;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Ensures text stays centered */
+  background-color: #ffcc00; /* Dark background for contrast */
+  color: #004d4d; /* White text */
+  padding: 20px; /* Padding for spacing */
+  /* border-bottom-right-radius: 10px; Rounded corners */
+  /* border-bottom-left-radius: 10px; */
+  font-size: 32px; /* Adjust font size */
+  font-weight: bold;
+  text-transform: uppercase; /* Makes text uppercase */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+   width: 75;
+    margin: auto;
+    margin-top: 1.5rem;
+    padding: 0%;
+  }
+  /* Cobra title background */
+  h1 {
+    background-color: #ffcc00; /* Change color as needed */
+    color: rgb(12, 66, 57);
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+  }
+  
+  /* Make sections full width */
+  .section {
+    width: 95%;
+    margin: 5%;
+    margin: auto;
+    margin-top: 1.5rem;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    background: #111111; /* Optional: gives a slight contrast */
+    text-align:left;
+    background-color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section p{
+    max-width: 82%; 
+  }
+  
+  .russell-snake-encounter-container{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+  }
+  
+  /* .container {
+    width: 80%;
+    margin: auto;
+  } */
+  
+  h1, h2 {
+    text-align:center;
+  }
+  
+  .diamond {
+    width: 230px;
+    height: 230px;
+    background-color: rgb(187, 233, 178);
+    position: absolute;
+    right: 4.3%;
+    top: 49.5%;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .diamond div {
+    transform: rotate(-45deg);
+  }
+  
+  /* Keep the inner content from moving */
+  .diamond div {
+  position: absolute;  /* Absolute positioning keeps it fixed */
+  transform: rotate(-45deg);
+  }
+  
+  /* Pop and Move Effect */
+  .diamond:hover {
+  transform: rotate(45deg) translateY(-10px) scale(1.1); /* Moves and scales */
+  box-shadow: 0 0 20px #ffcc00; /* Add glow effect */
+  }
+  /* .section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width:100;
+  } */
+  /* Basic hover animation for cards */
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .card {
+    wid/* Fix the text inside */
+  .diamond div {
+    transform: rotate(-45deg);
+  }
+  
+  /* Glow Animation */
+  @keyframes glow {
+    0% { box-shadow: 0 0 10px #bfec35; transform: scale(1); }  /* Normal */
+    50% { box-shadow: 0 0 30px #ffcc00; transform: scale(1.1); } /* Glow and Expand */
+    100% { box-shadow: 0 0 10px #bfec35; transform: scale(1); } /* Back to Normal */
+  }
+  
+  /* Apply the Animation on Hover */
+  .diamond:hover {
+    animation: glow 0.7s ease-in-out infinite;
+  }th: 200px;
+    height: 250px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Hover effect for cards */
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .card a {
+  color: black;              /* Set the text color to black */
+  text-decoration: none;     /* Remove the underline */
+  }
+  
+  .card a:visited {
+  color: black;              /* Keep text black after the link is visited */
+  }
+  
+  .card a:hover {
+  color: black;              /* Keep text black on hover */
+  text-decoration: none;     /* Ensure no underline on hover */
+  }
+  
+  
+  
+  .cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card {
+    width: 30%;
+    height: 50%;
+    padding: 20px;
+    text-align: center;
+    font: 2em sans-serif;
+    background-color: rgb(187, 233, 178);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 100%;
+  
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+  } 
+  

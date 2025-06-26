@@ -1,0 +1,234 @@
+/* Unique Page Title Styling */
+.titlee {
+  background: linear-gradient(to right, #ffcc00, #ff8800);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 34px;  /* Made Bigger */
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* food chain */
+.food-web-container {
+  width: 95%;
+  margin: 1.5rem auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Wrapper to Align Diagram and Info */
+.food-web-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Mini Box for Food Web */
+.food-web-box {
+  width: 350px;
+  height: 350px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+}
+
+/* Food Web (Initially Centered) */
+.food-web {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Food Nodes (Circle Layout) */
+.food-node {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Hover Effect */
+.food-node:hover {
+  transform: scale(1.2);
+}
+
+/* Clicked Effect */
+.food-node.clicked {
+  background-color: #ffcc00;
+}
+
+/* Center Snake */
+.snake {
+  top: 115px;
+  left: 115px;
+  background-color: #004d4d;
+  color: white;
+}
+
+/* Circular Positioning */
+.mouse { top: 10px; left: 115px; }
+.bird { top: 60px; left: 220px; }
+.mongoose { top: 180px; left: 220px; }
+.frog { top: 240px; left: 115px; }
+.insect { top: 180px; left: 10px; }
+.plant { top: 60px; left: 10px; }
+
+/* Info Box (Larger & Visually Appealing) */
+.food-info-box {
+  width: 400px;
+  background: #004d4d;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  display: none;
+  margin-left: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateY(20px);
+}
+
+/* Show Info Box */
+.food-info-box.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Image Styling */
+#info-image {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  margin-top: 15px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Show Image */
+#info-image.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Shift Mini Box Left */
+.food-web-box.shift-left {
+  transform: translateX(-180px);
+}
+
+
+/* === Global Image Styling (non-intrusive, responsive) === */
+section img,
+.info-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain; /* better for mixed portrait/landscape images */
+  transition: transform 0.3s ease-in-out;
+}
+
+section img:hover,
+.info-box img:hover {
+  transform: scale(1.05);
+}
+
+/* === Image Gallery Specific Styling === */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.image-gallery img {
+  width: 30%;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+  aspect-ratio: 4 / 3; /* keeps a good shape across sizes */
+}
+
+.image-gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* === Responsive for Smaller Screens === */
+@media (max-width: 768px) {
+  .image-gallery img {
+    width: 100%;
+    aspect-ratio: auto;
+  }
+
+  section img,
+  .info-box img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+/* === Responsive Adjustments for Food Web === */
+@media (max-width: 1000px) {
+  .food-web-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .food-web-box {
+    transform: none !important; /* reset shift-left */
+    margin-bottom: 20px;
+  }
+
+  .food-info-box {
+    margin-left: 0;
+    width: 90%;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .food-node {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+  }
+
+  .food-web {
+    width: 250px;
+    height: 250px;
+  }
+
+  .snake {
+    top: 90px;
+    left: 90px;
+  }
+
+  .mouse { top: 5px; left: 90px; }
+  .bird { top: 40px; left: 180px; }
+  .mongoose { top: 150px; left: 180px; }
+  .frog { top: 190px; left: 90px; }
+  .insect { top: 150px; left: 5px; }
+  .plant { top: 40px; left: 5px; }
+}

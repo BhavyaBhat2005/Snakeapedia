@@ -1,0 +1,154 @@
+/* Unique Page Title Styling */
+.page-title {
+  background: linear-gradient(to right, #ffcc00, #ff8800);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 34px;  /* Made Bigger */
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styling */
+.contact-section {
+  background: #fff;
+  padding: 60px 10%;
+  width: 95%;
+  margin:  auto;
+  margin-top: 1.5rem;
+  /* border-radius: 10px; */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact-form input, #contact-form textarea {
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #004d4d; 
+  border-radius: 5px;
+}
+
+#contact-form button {
+  background: #ffcc00;
+  color: #004d4d;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+#contact-form button:hover {
+  background: #e6b800;
+}
+
+#message-status {
+  color: green;
+  font-size: 1rem;
+  text-align: center;
+  
+  margin-top: 10px;
+  display: none; /* Hide until triggered by JS */
+}
+
+
+/* Map Styling */
+iframe {
+  width: 100%;
+  height: 300px;
+  display: ruby-base-container;
+  align-content: center;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-grid {
+      flex-direction: column;
+  }
+}
+
+/* White Box Section */
+.white-box {
+  background: #fff;
+  padding: 40px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  margin:  auto;
+  margin-top: 1.5rem;
+}
+
+/* Contact Information & Helpline Boxes */
+.ci-details, .helpline-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.ci-box, .helpline-box {
+  flex: 1;
+  min-width: 220px;
+  max-width: 250px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #004d4d, #008080);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ci-box:hover, .helpline-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
+h2 {
+  text-align: center;
+  
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ci-details, .helpline-details {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+/* Make links inside boxes white and remove underline */
+.ci-box a, .helpline-box a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Optional: underline on hover if you want interactivity */
+.ci-box a:hover, .helpline-box a:hover {
+  text-decoration: underline;
+}
+
+/* Fix inconsistent sizes in mobile view */
+@media (max-width: 768px) {
+  .ci-details, .helpline-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ci-box, .helpline-box {
+    width: 100%;
+    max-width: 400px;  /* Ensures consistent max size */
+  }
+}

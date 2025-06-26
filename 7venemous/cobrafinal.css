@@ -1,0 +1,397 @@
+
+/* Mobile Menu */
+header .menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.page-heading{
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(14, 63, 65);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffcc00;
+  font-size: 150%;
+}
+
+.info-box{
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid white;
+  margin-top: 3rem;
+}
+.title-section {
+  width: 100%; /* Full width */
+height: 50%;
+display: flex;
+justify-content: center; /* Centers content horizontally */
+align-items: center; /* Centers content vertically */
+text-align: center; /* Ensures text stays centered */
+background-color: #ffcc00; /* Dark background for contrast */
+color: #004d4d; /* White text */
+padding: 20px; /* Padding for spacing */
+/* border-bottom-right-radius: 10px; Rounded corners */
+/* border-bottom-left-radius: 10px; */
+font-size: 32px; /* Adjust font size */
+font-weight: bold;
+text-transform: uppercase; /* Makes text uppercase */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Universal Styling for H2 Headings with Underline */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0e0901;
+  margin-bottom: 30px; /* Space between the heading and content */
+  text-align: center; /* Center align the heading */
+  position: relative;
+}
+
+/* Add a small underline effect for all H2 elements */
+h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px; /* Adjust the position of the underline */
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: #ffcc00; /* Yellow color */
+  border-radius: 10px; /* Rounded edges for the line */
+}
+
+/* Default Title Section - Large Screens */
+.title-section {
+  width: 100%;
+  min-height: 40vh; /* Adjust height dynamically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffcc00; /* Yellow background */
+  color: #004d4d;
+  padding: 2rem;
+  font-size: clamp(2rem, 4vw, 3rem); /* Responsive font */
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Default H1 Styling */
+h1 {
+  text-align: center;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: bold;
+  color: #4A2C2A;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 1rem 0;
+}
+
+/* Responsive for 1024px and Below (Tablets & Smaller Screens) */
+@media (max-width: 1024px) {
+  .title-section {
+    min-height: 35vh; /* Adjust for smaller screens */
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+/* Responsive for 768px and Below (Tablets & Small Laptops) */
+@media (max-width: 768px) {
+  .title-section {
+    min-height: 30vh;
+    font-size: 1.8rem;
+    padding: 1.2rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Responsive for 480px and Below (Mobile Devices) */
+@media (max-width: 480px) {
+  .title-section {
+    min-height: 25vh;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+}
+
+/* Responsive for 320px and Below (Smallest Mobile Screens) */
+@media (max-width: 320px) {
+  .title-section {
+    min-height: 20vh;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+ width: 75;
+  margin: auto;
+  margin-top: 1.5rem;
+  padding: 0%;
+}
+/* Cobra title background */
+h1 {
+  background-color: #ffcc00; /* Change color as needed */
+  color: rgb(12, 66, 57);
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+}
+
+/* Make sections full width */
+.section {
+  width: 95%;
+  margin: 5%;
+  margin: auto;
+  margin-top: 1.5rem;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  background: #111111; /* Optional: gives a slight contrast */
+  text-align:left;
+  background-color: white;
+  margin-bottom: 1.5rem;
+}
+
+.section p{
+  max-width: 82%; 
+}
+
+.russell-snake-encounter-container{
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+/* .container {
+  width: 80%;
+  margin: auto;
+} */
+
+h1, h2 {
+  text-align:center;
+}
+
+.diamond {
+  width: 230px;
+  height: 230px;
+  background-color: rgb(187, 233, 178);
+  position: absolute;
+  right: 5.5%;
+  top: 52%;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.diamond div {
+  transform: rotate(-45deg);
+}
+
+/* Keep the inner content from moving */
+.diamond div {
+position: absolute;  /* Absolute positioning keeps it fixed */
+transform: rotate(-45deg);
+}
+
+/* Pop and Move Effect */
+.diamond:hover {
+transform: rotate(45deg) translateY(-10px) scale(1.1); /* Moves and scales */
+box-shadow: 0 0 20px #ffcc00; /* Add glow effect */
+}
+/* .section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  width:100;
+} */
+/* Basic hover animation for cards */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card {
+  justify-content: center;
+  align-items: center;
+  wid/* Fix the text inside */
+.diamond div {
+  transform: rotate(-45deg);
+}
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0% { box-shadow: 0 0 10px #bfec35; transform: scale(1); }  /* Normal */
+  50% { box-shadow: 0 0 30px #ffcc00; transform: scale(1.1); } /* Glow and Expand */
+  100% { box-shadow: 0 0 10px #bfec35; transform: scale(1); } /* Back to Normal */
+}
+
+/* Apply the Animation on Hover */
+.diamond:hover {
+  animation: glow 0.7s ease-in-out infinite;
+/* th: 200px; */
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 2px solid #c3eeaa;
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.card a {
+color: black;              /* Set the text color to black */
+text-decoration: none;     /* Remove the underline */
+}
+
+.card a:visited {
+color: black;              /* Keep text black after the link is visited */
+}
+
+.card a:hover {
+color: black;              /* Keep text black on hover */
+text-decoration: none;     /* Ensure no underline on hover */
+}
+
+.card p {
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+ align-content: center;
+
+}
+
+.cards {
+  
+  justify-content: space-around;
+}
+
+.card {
+  width: 30%;
+  height: 50%;
+  padding: 20px;
+  text-align: center;
+  font: 2em sans-serif;
+  background-color: rgb(187, 233, 178);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+}
+/* --- Cobra Safety Section --- */
+.safety-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.safety-item {
+  background: #004d4d;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image Styling */
+.safety-img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.safety-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Hover Effect */
+.safety-item:hover {
+  transform: scale(1.1);
+  background: #ffcc00;
+  color: #004d4d;
+}
+
+.safety-item:hover .safety-img img {
+  filter: brightness(0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .safety-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .safety-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+

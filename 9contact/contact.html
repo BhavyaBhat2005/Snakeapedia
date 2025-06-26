@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  
+  <link rel="stylesheet" href="../1home/styling.css" />
+  <link rel="stylesheet" href="../9contact/contact.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../0images/1general/0.1SNAKEPEDIAlogo.png" alt="Snakepedia Logo" />
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav class="">
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="../1home/home.html">Home</a></li>
+        <li><a href="../2about/about.html">About Us</a></li>
+  
+        <li class="dropdown">
+          <a href="../3intro/intro.html">Introduction to Snakes <span class="arrow">▼</span></a>
+          <ul class="dropdown-content">
+            <li><a href="../4history/history.html">History</a></li>
+            <li><a href="../5religious/religious.html">Religious Significance</a></li>
+            <li><a href="../6biological/biologicalclassification.html">Biological Classification</a></li>
+          </ul>
+        </li>
+  
+        <li class="dropdown">
+          <a href="../7venemous/0.0venemous.html">Venomous Snakes <span class="arrow">▼</span></a>
+          <ul class="dropdown-content">
+            <li class="sub-dropdown">
+              <a href="../7venemous/0.1cobra.html">Cobra</a>
+              <ul class="sub-dropdown-content">
+                <li><a href="../7venemous/01.1indiancobra.html">Indian Cobra</a></li>
+                <li><a href="../7venemous/01.2forestcobra.html">Forest Cobra</a></li>
+                <li><a href="../7venemous/01.3monocledcobra.html">Monocled Cobra</a></li>
+              </ul>
+            </li>
+            <li class="sub-dropdown">
+              <a href="../7venemous/0.2krait.html">Krait</a>
+              <ul class="sub-dropdown-content">
+                <li><a href="../7venemous/02.1commonkrait.html">Common Krait</a></li>
+                <li><a href="../7venemous/02.2bandedkrait.html">Banded Krait</a></li>
+                <li><a href="../7venemous/02.3malaykrait.html">Malayan Krait</a></li>
+              </ul>
+            </li>
+            <li class="sub-dropdown">
+              <a href="../7venemous/0.3Russell's Viper.html">Russell's Viper</a>
+              <ul class="sub-dropdown-content">
+                <li><a href="../7venemous/03.2indianru.html">Indian Russell's Viper</a></li>
+                <li><a href="../7venemous/03.3pitviper.html">Pit Viper</a></li>
+                <li><a href="../7venemous/03.1chainviper.html">Chain Viper</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+  
+        <li class="dropdown">
+          <a href="../8nonvenom/0.0nonvenemous.html">Non-Venomous Snakes <span class="arrow">▼</span></a>
+          <ul class="dropdown-content">
+            <li class="sub-dropdown">
+              <a href="../8nonvenom/0.1python.html">Python</a>
+              <ul class="sub-dropdown-content">
+                <li><a href="../8nonvenom/01.1indianpy.html">Indian Python</a></li>
+                <li><a href="../8nonvenom/01.2recpy.html">Reticulated Python</a></li>
+                <li><a href="../8nonvenom/01.3ballpy.html">Ball Python</a></li>
+              </ul>
+            </li>
+            <li class="sub-dropdown">
+              <a href="../8nonvenom/0.2ratsnake.html">Rat Snake</a>
+              <ul class="sub-dropdown-content">
+                <li><a href="../8nonvenom/02.1black-rsnake.html">Black Rat Snake</a></li>
+                <li><a href="../8nonvenom/02.2indian-rsnake.html">Indian Rat Snake</a></li>
+                <li><a href="../8nonvenom/02.3striped-rsnake.html">Striped Rat Snake</a></li>
+              </ul>
+            </li>
+            <li class="sub-dropdown">
+              <a href="../8nonvenom/0.3keelback.html">Keelback</a>
+              <ul class="sub-dropdown-content">
+                <li><a href="../8nonvenom/03.1checkered.html">Checkered Keelback</a></li>
+                <li><a href="../8nonvenom/03.2nilgiri.html">Nilgiri Keelback</a></li>
+                <li><a href="../8nonvenom/03.3tiger.html">Tiger Keelback</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+  
+        <li><a href="../1home/home.html#faq1">FAQ's</a></li>
+        <li><a href="../9contact/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+   <!-- Heading -->
+    
+   <h1 class="page-title">Contact Us</h1>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Send Us a Message</h2>
+            <br>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+                <p id="message-status"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+<section class="white-box">
+    <h2>Contact Information</h2>
+    <div class="ci-details">
+        <!-- Email Box -->
+        <div class="ci-box email-contact">
+            <h3>Email</h3>
+            <p><a href="mailto:contact@snakepedia.com">contact@snakepedia.com</a></p>
+        </div>
+  
+        <!-- Phone Box -->
+        <div class="ci-box phone-contact">
+            <h3>Phone</h3>
+            <p><a href="tel:+911234567890">+91 123 456 7890</a></p>
+        </div>
+  
+        <!-- Address Box -->
+        <div class="ci-box address-contact">
+            <h3>Address</h3>
+            <p>123 Snakepedia Lane, Pune, India</p>
+        </div>
+  
+        <!-- Working Hours Box -->
+        <div class="ci-box hours-contact">
+            <h3>Working Hours</h3>
+            <p>Mon-Fri: 9 AM - 6 PM</p>
+        </div>
+    </div>
+  </section>
+  
+  <!-- Snake Helpline Section -->
+  <section class="white-box">
+    <h2>Snake Helplines</h2>
+    <div class="helpline-details">
+        <div class="helpline-box">
+            <h3>Wildlife SOS</h3>
+            <p>Call: +91-9871963535</p>
+        </div>
+        <div class="helpline-box">
+            <h3>Friends of Snakes Society</h3>
+            <p>Call: +91-8374233366 </p>
+        </div>
+        <div class="helpline-box">
+            <h3>People For Animals</h3>
+            <p>Call: +91-8285369674</p>
+        </div>
+        <div class="helpline-box">
+            <h3>Maharashtra Forest Department</h3>
+            <p>Call: +91-0712-2550675</p>
+        </div>
+    </div>
+  </section>
+  
+
+
+
+    <!-- Map Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Our Location</h2>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15283642.247118069!2d72.10376547329106!3d20.73628013396964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1741678872454!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+   
+
+
+<!-- Boxicons Link -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> 
+
+<!-- Move to Top Button -->
+<section id="move-to-top-container">
+  <button id="move-to-top" title="Go to top">&#8679;</button>
+</section>
+
+<footer>
+  <div class="footer-container">
+    
+    <!-- Left Section: Logo & Download Brochure -->
+    <div class="footer-left">
+      <img src="../0images/1general/0.1SNAKEPEDIAlogo.png" alt="Snakepedia Logo" class="footer-logo">
+      <a href="../0images/1general/0snakeapedia-brochure-final.pdf" class="download-btn">Download Brochure</a>
+    </div>
+
+    <!-- Center Section: Social Media & Copyright -->
+    <div class="footer-center">
+      <h3>
+        <span class="line"></span> 
+        <a href="../9contact/contact.html">Connect With Us!</a> 
+        <span class="line"></span>
+      </h3>
+      <ul class="social-icons">
+        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class='bx bxl-instagram-alt bx-lg'></i></a>
+        <a href="https://www.facebook.com/"><i class='bx bxl-facebook-square bx-lg'></i></a>
+        <a href="https://in.linkedin.com/"><i class='bx bxl-linkedin-square bx-lg'></i></a>
+        <a href="https://www.youtube.com/"><i class='bx bxl-youtube bx-lg'></i></a>
+        <a href="https://x.com/?lang=en"><i class='bx bxl-twitter bx-lg'></i></a>
+      </ul>
+      <p class="copyright"><b>© © 2024 Snakeapedia | Student Project | For Educational Use Only Snakepeadia | All Rights Reserved</b></p>
+    </div>
+
+    <!-- Right Section: Contact Information -->
+    <div class="footer-right">
+      <h4>Contact Us</h4>
+      <p>Email: <a href="mailto:info@snakeapedia.com">info@snakeapedia.com</a></p>
+      <p>Phone: +91 123 456 7890</p>
+      <p>Address: 123 Snakeapedia Lane, Pune, India</p>
+    </div>
+
+  </div>
+</footer>
+
+  
+      <script src="about.js"></script>
+      
+    
+  
+ 
+  <script src="../9contact/contact.js"></script>
+
+</body>
+</html>

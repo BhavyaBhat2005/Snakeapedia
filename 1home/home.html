@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>www.snakeapedia.com</title>
+  <link rel="stylesheet" href="styling.css" />
+  <link rel="stylesheet" href="global.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="../0images/1general/0.1SNAKEPEDIAlogo.png" alt="Snakepedia Logo" />
+  </div>
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <nav>
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="../1home/home.html">Home</a></li>
+      <li><a href="../2about/about.html">About Us</a></li>
+
+      <li class="dropdown">
+        <a href="../3intro/intro.html">Introduction to Snakes <span class="arrow">▼</span></a>
+        <ul class="dropdown-content">
+          <li><a href="../4history/history.html">History</a></li>
+          <li><a href="../5religious/religious.html">Religious Significance</a></li>
+          <li><a href="../6biological/biologicalclassification.html">Biological Classification</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="../7venemous/0.0venemous.html">Venomous Snakes <span class="arrow">▼</span></a>
+        <ul class="dropdown-content">
+          <li class="sub-dropdown">
+            <a href="../7venemous/0.1cobra.html">Cobra</a>
+            <ul class="sub-dropdown-content">
+              <li><a href="../7venemous/01.1indiancobra.html">Indian Cobra</a></li>
+              <li><a href="../7venemous/01.2forestcobra.html">Forest Cobra</a></li>
+              <li><a href="../7venemous/01.3monocledcobra.html">Monocled Cobra</a></li>
+            </ul>
+          </li>
+          <li class="sub-dropdown">
+            <a href="../7venemous/0.2krait.html">Krait</a>
+            <ul class="sub-dropdown-content">
+              <li><a href="../7venemous/02.1commonkrait.html">Common Krait</a></li>
+              <li><a href="../7venemous/02.2bandedkrait.html">Banded Krait</a></li>
+              <li><a href="../7venemous/02.3malaykrait.html">Malayan Krait</a></li>
+            </ul>
+          </li>
+          <li class="sub-dropdown">
+            <a href="../7venemous/0.3Russell's Viper.html">Russell's Viper</a>
+            <ul class="sub-dropdown-content">
+              <li><a href="../7venemous/03.2indianru.html">Indian Russell's Viper</a></li>
+              <li><a href="../7venemous/03.3pitviper.html">Pit Viper</a></li>
+              <li><a href="../7venemous/03.1chainviper.html">Chain Viper</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="../8nonvenom/0.0nonvenemous.html">Non-Venomous Snakes <span class="arrow">▼</span></a>
+        <ul class="dropdown-content">
+          <li class="sub-dropdown">
+            <a href="../8nonvenom/0.1python.html">Python</a>
+            <ul class="sub-dropdown-content">
+              <li><a href="../8nonvenom/01.1indianpy.html">Indian Python</a></li>
+              <li><a href="../8nonvenom/01.2recpy.html">Reticulated Python</a></li>
+              <li><a href="../8nonvenom/01.3ballpy.html">Ball Python</a></li>
+            </ul>
+          </li>
+          <li class="sub-dropdown">
+            <a href="../8nonvenom/0.2ratsnake.html">Rat Snake</a>
+            <ul class="sub-dropdown-content">
+              <li><a href="../8nonvenom/02.1black-rsnake.html">Black Rat Snake</a></li>
+              <li><a href="../8nonvenom/02.2indian-rsnake.html">Indian Rat Snake</a></li>
+              <li><a href="../8nonvenom/02.3striped-rsnake.html">Striped Rat Snake</a></li>
+            </ul>
+          </li>
+          <li class="sub-dropdown">
+            <a href="../8nonvenom/0.3keelback.html">Keelback</a>
+            <ul class="sub-dropdown-content">
+              <li><a href="../8nonvenom/03.1checkered.html">Checkered Keelback</a></li>
+              <li><a href="../8nonvenom/03.2nilgiri.html">Nilgiri Keelback</a></li>
+              <li><a href="../8nonvenom/03.3tiger.html">Tiger Keelback</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li><a onclick="Questions()">FAQ's</a></li>
+      <li><a href="../9contact/contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+  
+  
+    <!-- Hero Section (Slider with 5 images and Welcome Text) -->
+
+<!-- Hero Slider Section -->
+<section id="hero-slider">
+  <div class="slider">
+    <div class="slide active">
+      <img src="../0images/1general/1homeslider1.jpeg" alt="Slide 1" width="200%" height="200%">
+      <div class="overlay">
+        <h1>Welcome to Snakeapedia</h1>
+        <p>Explore the fascinating world of snakes in India.</p>
+        <a href="#other-cards" class="btn">Start Exploring</a> <!-- Redirecting to Cards Section -->
+      </div>
+    </div>
+    <div class="slide">
+      <img src="../0images/1general/1homeslider2.webp" alt="Slide 2" width="200%" height="200%">
+      <div class="overlay">
+        <h1>Snakes in India</h1>
+        <p>Discover the diverse range of snakes found across India.</p>
+        <a href="../3intro/intro.html" class="btn">Learn More</a> <!-- Redirecting to Snakes in India Card -->
+      </div>
+    </div>
+    <div class="slide">
+      <img src="../0images/1general/1homeslider3.jpg" alt="Slide 3" width="200%" height="200%">
+      <div class="overlay">
+        <h1>Venomous Snakes</h1>
+        <p>Explore some of the most dangerous venomous snakes in India.</p>
+        <a href="../7venemous/0.0venemous.html" class="btn">Find Out</a> <!-- Redirecting to History Card -->
+      </div>
+    </div>
+    <div class="slide">
+      <img src="../0images/1general/slider.jpeg" alt="Slide 4" width="200%" height="200%">
+      <div class="overlay">
+        <h1>Non-Venomous Snakes</h1>
+        <p>Explore some of the non-venomous snakes in India.</p>
+        <a href="../8nonvenom/0.0nonvenemous.html" class="btn">Discover More</a> <!-- Redirecting to Venomous Snakes Card -->
+      </div>
+    </div>
+    <div class="slide">
+      <img src="../0images/1general/1homeslider5.jpg" alt="Slide 5" >
+      <div class="overlay">
+        <h1>Contact Us</h1>
+        <p>Have any questions or want to share your thoughts?</p>
+        <a href="../9contact/contact.html" class="btn">Get in Touch</a> 
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Dots -->
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
+
+<script src="app.js"></script>
+
+
+<!-- Intro Section (Text Left, Video Right) -->
+<section class="section-box intro-snakes">
+  <div class="section-content">
+    <div class="section-text">
+      <h2>Learn about Snakes in India</h2>
+      <p>
+        Snakes are elongated, legless reptiles found in diverse habitats worldwide, playing a crucial role in maintaining ecological balance by controlling pest populations. With over 3,000 species, they have evolved unique adaptations like venom production, heat-sensing pits, and flexible jaws. India is home to a rich diversity of snakes, including both non-venomous and highly venomous species like the Indian Cobra, Russell’s Viper, and Saw-scaled Viper. The country’s varied climate and landscapes provide ideal conditions for their survival. Snakes hold cultural and religious significance in India, often symbolizing power and wisdom in mythology. While they benefit agriculture by controlling rodents, human-snake conflicts due to habitat loss and fear are common, highlighting the need for conservation and awareness efforts.
+        <a href="../3intro/intro.html" class="read-more">Read More</a>
+      </p>
+    </div>
+    <div class="section-media">
+      <video autoplay loop muted playsinline>
+        <source src="../0images/1general/1home1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+     <!-- Fun Facts Section -->
+     <section id="fun-facts" class="fact-section">
+      <h2>Fun Facts About Snakes</h2>
+      <div class="fact-item">
+          <h4>Did You Know?</h4>
+          <p>Snakes can go months without eating!</p>
+      </div>
+      <div class="fact-item">
+          <h4>Did You Know?</h4>
+          <p>Some snakes can unhinge their jaws to swallow prey much larger than their head.</p>
+      </div>
+      <div class="fact-item">
+          <h4>Did You Know?</h4>
+          <p>The longest snake in the world is the reticulated python, which can reach lengths over 30 feet!</p>
+      </div>
+    </section>
+    
+
+<!-- Other Cards Section (History, Religious Significance, Biological Classification) -->
+<section id="other-cards">
+  <h2>Explore More About Snakes</h2>
+  <p>Learn more about the history, religious significance, and biological classification of snakes.</p>
+
+  <!-- History, Religious Significance, Biological Classification Cards -->
+  <div class="card-container">
+      <div class="card">
+          <a href="../4history/history.html">
+              <img src="../0images/1general/1home2.jpg" alt="History of Snakes">
+              <h3>History of Snakes</h3>
+              <p>Snakes have been around for millions of years. Learn about their evolution and history.</p>
+          </a>
+      </div>
+      <div class="card">
+          <a href="../5religious/religious.html">
+              <img src="../0images/1general/1home3.jpeg" alt="Religious Significance of Snakes">
+              <h3>Religious Significance</h3>
+              <p>Snakes hold a special place in many cultures and religions. Discover their significance.</p>
+          </a>
+      </div>
+      <div class="card">
+          <a href="../6biological/biologicalclassification.html">
+              <img src="../0images/1general/1home4.jpeg" alt="Biological Classification of Snakes">
+              <h3>Biological Classification</h3>
+              <p>Snakes are classified based on their unique biological characteristics. Learn more here.</p>
+          </a>
+      </div>
+  </div>
+</section>
+    
+
+  
+<!-- Venomous and Non-Venomous Snakes Section -->
+<section id="venomous-nonvenomous" class="section-box">
+  <h2 class="universal-heading">Venomous & Non-Venomous Snakes</h2>
+  <div class="snake-cards-container">
+      <!-- Venomous Snake Card -->
+      <div class="snake-card venomous">
+          <a href="../7venemous/0.0venemous.html">
+              <div class="card-content">
+                  <div class="text-section">
+                      <h3>Venomous Snakes</h3>
+                      <p>Deadly and powerful! Venomous snakes inject toxins through their fangs, making them one of nature's most feared predators.</p>
+                      <button class="explore-btn">Start Exploring</button>
+                  </div>
+                  <div class="image-section">
+                      <img src="../0images/1general/1home5.jpg" alt="Venomous Snake">
+                  </div>
+              </div>
+          </a>
+      </div>
+
+      <!-- Non-Venomous Snake Card -->
+      <div class="snake-card nonvenomous">
+          <a href="../8nonvenom/0.0nonvenemous.html">
+              <div class="card-content">
+                  <div class="text-section">
+                      <h3>Non-Venomous Snakes</h3>
+                      <p>Safe yet fascinating! Non-venomous snakes rely on constriction to capture prey, showcasing a different kind of hunting skill.</p>
+                      <button class="explore-btn">Start Exploring</button>
+                  </div>
+                  <div class="image-section">
+                      <img src="../0images/1general/1home6.jpg" alt="Non-Venomous Snake">
+                  </div>
+              </div>
+          </a>
+      </div>
+  </div>
+</section>
+
+
+<section id="faq1">
+  <div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-box">
+      <div class="faq">
+        <p class="question">Are all snakes in India venomous?</p>
+        <div class="answer">
+          No, not all snakes in India are venomous. There are many non-venomous snake species.
+        </div>
+      </div>
+
+      <div class="faq">
+        <p class="question">What are the most common venomous snakes in India?</p>
+        <div class="answer">
+          Some of the most common venomous snakes in India include Indian Cobra, Russell's Viper, Saw-scaled Viper, and Common Krait.
+        </div>
+      </div>
+
+      <div class="faq">
+        <p class="question">What should I do if I encounter a snake?</p>
+        <div class="answer">
+          If you encounter a snake, it's best to observe it from a safe distance and avoid disturbing it. If it's in a dangerous location, contact a local snake rescuer or wildlife authority.
+        </div>
+      </div>
+
+      <div class="faq">
+        <p class="question">Is snakebite common in India?</p>
+        <div class="answer">
+          Yes, snakebite is a significant public health issue in India.
+        </div>
+      </div>
+
+      <div class="faq">
+        <p class="question">How can I prevent snakebites?</p>
+        <div class="answer">
+          You can prevent snakebites by wearing appropriate footwear, avoiding walking in tall grass at night, and keeping your surroundings clean and free of debris.
+        </div>
+      </div>
+
+      <div class="faq">
+        <p class="question">Where can I learn more about snakes in India?</p>
+        <div class="answer">
+          You can find more information about snakes in India from reputable sources like wildlife organizations, herpetological societies, and government websites. And of course, explore our site, Snakepedia!
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Boxicons Link -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> 
+
+<!-- Move to Top Button -->
+<section id="move-to-top-container">
+  <button id="move-to-top" title="Go to top">&#8679;</button>
+</section>
+
+<footer>
+  <div class="footer-container">
+    
+    <!-- Left Section: Logo & Download Brochure -->
+    <div class="footer-left">
+      <img src="../0images/1general/0.1SNAKEPEDIAlogo.png" alt="Snakepedia Logo" class="footer-logo">
+      <a href="../0images/1general/0snakeapedia-brochure-final.pdf" class="download-btn">Download Brochure</a>
+    </div>
+
+    <!-- Center Section: Social Media & Copyright -->
+    <div class="footer-center">
+      <h3>
+        <span class="line"></span> 
+        <a href="../9contact/contact.html">Connect With Us!</a> 
+        <span class="line"></span>
+      </h3>
+      <ul class="social-icons">
+        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class='bx bxl-instagram-alt bx-lg'></i></a>
+        <a href="https://www.facebook.com/"><i class='bx bxl-facebook-square bx-lg'></i></a>
+        <a href="https://in.linkedin.com/"><i class='bx bxl-linkedin-square bx-lg'></i></a>
+        <a href="https://www.youtube.com/"><i class='bx bxl-youtube bx-lg'></i></a>
+        <a href="https://x.com/?lang=en"><i class='bx bxl-twitter bx-lg'></i></a>
+      </ul>
+      <p class="copyright"><b>© © 2024 Snakeapedia | Student Project | For Educational Use Only Snakepeadia | All Rights Reserved</b></p>
+    </div>
+
+    <!-- Right Section: Contact Information -->
+    <div class="footer-right">
+      <h4>Contact Us</h4>
+      <p>Email: <a href="mailto:info@snakeapedia.com">info@snakeapedia.com</a></p>
+      <p>Phone: +91 123 456 7890</p>
+      <p>Address: 123 Snakeapedia Lane, Pune, India</p>
+    </div>
+
+  </div>
+</footer>

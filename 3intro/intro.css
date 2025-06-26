@@ -1,0 +1,654 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Unique Page Title Styling */
+.page-title {
+    background: linear-gradient(to right, #ffcc00, #ff8800);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 34px;  /* Made Bigger */
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Box Styling */
+.content-box {
+    background: white;
+    padding: 20px;
+    margin: auto;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+}
+
+/* Image Styling */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.image-gallery img {
+    width: 30%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Zone Buttons (Blue) */
+.zone-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.zone-item {
+    background: #0056b3; /* Blue */
+    color: white;
+    padding: 14px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid transparent;
+}
+
+/* Hover Effect: Turns Yellow */
+.zone-item:hover {
+    background: #ffcc00; /* Yellow on Hover */
+    color: black;
+    border-color: black;
+}
+
+/* Active (Clicked) State: Stays Yellow */
+.zone-item.active {
+    background: #ffcc00; /* Yellow */
+    color: black;
+    border-color: black;
+}
+
+/* Initially Hidden Content Boxes */
+.zone-content {
+    display: none; /* Hidden by default */
+    padding: 20px;
+    margin-top: 10px;
+    background: #ffcc00; /* Yellow Background */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Animation for smooth appearance */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .content-box {
+      padding: 15px;
+      width: 95%;
+    }
+  
+    .image-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-gallery img {
+      width: 90%;
+      max-width: 350px;
+    }
+  
+    .page-title {
+      font-size: 26px;
+      padding: 15px;
+    }
+  
+    .content-box p {
+      font-size: 0.95rem;
+    }
+  
+    .content-box h2 {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  }
+  
+
+/* Zone Buttons (Initially Blue) */
+.zone-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.zone-item {
+    background: #0056b3; /* Blue */
+    color: white;
+    padding: 14px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid transparent;
+}
+
+/* Hover Effect: Turns Yellow */
+.zone-item:hover {
+    background: #ffcc00;
+    color: black;
+    border-color: black;
+}
+
+/* Active (Clicked) State: Stays Yellow */
+.zone-item.active {
+    background: #ffcc00;
+    color: black;
+    border-color: black;
+}
+
+/* Hidden Content Boxes (Initially Invisible) */
+.zone-content {
+    display: none; /* Hidden at first */
+    padding: 20px;
+    margin-top: 10px;
+    background: #ffcc00; /* Yellow Background */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 100%;
+    min-height: 250px; /* Ensures all boxes are the same size */
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Fade-in Animation */
+.zone-content.show {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Zone Buttons (Initially Blue) */
+.zone-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.zone-item {
+    background: #0056b3; /* Blue */
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid transparent;
+    padding: 10px 15px; /* Slight padding for clickability */
+}
+
+/* Hover Effect: Turns Yellow */
+.zone-item:hover {
+    background: #ffcc00;
+    color: black;
+    border-color: black;
+}
+
+/* Active (Clicked) State: Stays Yellow */
+.zone-item.active {
+    background: #ffcc00;
+    color: black;
+    border-color: black;
+}
+
+/* Content Boxes (Hidden Initially) */
+.zone-content {
+    display: none; /* Hidden at first */
+    margin-top: 10px;
+    background: #ffcc00; /* Yellow */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 100%;
+    min-height: 250px; /* All boxes same size */
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Fade-in Animation */
+.zone-content.show {
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Zone Buttons (Initially Blue) */
+.zone-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.zone-item {
+    background: #0056b3; /* Blue */
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid transparent;
+    padding: 10px 15px;
+}
+
+/* Hover Effect: Turns Yellow */
+.zone-item:hover {
+    background: #ffcc00;
+    color: black;
+    border-color: black;
+}
+
+/* Active (Clicked) State: Stays Yellow */
+.zone-item.active {
+    background: #ffcc00;
+    color: black;
+    border-color: black;
+}
+
+/* Content Boxes (Hidden Initially) */
+.zone-content {
+    display: none; /* Hidden at first */
+    margin-top: 10px;
+    background: #ffcc00; /* Yellow */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 100%;
+    min-height: 250px;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Fade-in Animation */
+.zone-content.show {
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+}
+
+.content-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.zone-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.zone-item {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: background 0.3s, color 0.3s;
+}
+
+.zone-item.active {
+    background-color: yellow !important;
+    color: black !important;
+}
+
+.zone-content {
+    display: none;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: lightyellow;
+    text-align: left;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.content-container ul {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.content-container img {
+    width: 300px;
+    height: auto;
+}
+
+
+/* ===================== Responsive Styles ===================== */
+@media (max-width: 768px) {
+    .zone-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .zone-item {
+        width: 90%;
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .zone-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .content-container ul {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .content-container img {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .content-box h2 {
+        font-size: 22px;
+    }
+
+    .content-box p {
+        font-size: 16px;
+    }
+}
+
+
+/* General Section Box Styling snake anatomy*/
+.section-box {
+   
+    padding: 20px;
+    background-color: white;  /* Ensure the white box stays visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for effect */
+    border-radius: 8px;
+    width: 95%;
+margin: auto;
+margin-top: 1.5rem;
+    opacity: 1; /* Remove the opacity animation from the box itself */
+    animation: fadeInUp 1s forwards;  /* Animation for the box */
+}
+
+/* Content inside the section */
+.section-content {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Text on the left */
+.section-text {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+    animation: fadeInText 1s forwards;
+
+}
+
+/* Media on the right */
+.section-media {
+    flex: 1;
+    animation: fadeInMedia 1s forwards;
+}
+
+.section-media video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column; /* Stack text and media vertically */
+    }
+
+    .section-text,
+    .section-media {
+        flex: unset;        /* Reset flex to allow natural width */
+        width: 100%;        /* Full width on mobile */
+    }
+
+    .section-media video {
+        max-height: 300px; /* Optional: Limit video height for smaller screens */
+    }
+
+    .section-box {
+        padding: 15px; /* Slightly reduced padding for smaller screens */
+    }
+
+    .section-text {
+        font-size: 0.95rem; /* Slightly smaller font for better fit */
+    }
+}
+
+/* Snakes & Humans Section - Image Left, Text Right */
+.image-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-y: auto; /* Allow vertical scrolling */
+    max-height: 100%; /* Prevent overflow from image bounds */
+    box-sizing: border-box;
+}
+
+.image-overlay::-webkit-scrollbar {
+    width: 5px;
+}
+.image-overlay::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .image-overlay {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .image-overlay h3 {
+        font-size: 1rem;
+    }
+
+    .image-overlay p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
+
+
+.image-overlay h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.image-overlay p {
+    font-size: 1rem;
+}
+
+.image-container:hover .image-overlay {
+    opacity: 1;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInMedia {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInImageLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInTextRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Swap on Small Screens */
+@media (max-width: 768px) {
+    .responsive-swap {
+      flex-direction: column;
+    }
+  
+    .section-text, .section-media {
+      flex: unset;
+      width: 100%;
+    }
+  
+    .image-overlay {
+      font-size: 0.95rem;
+    }
+  
+    .image-overlay h3 {
+      font-size: 1.1rem;
+    }
+  }
+  
